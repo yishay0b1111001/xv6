@@ -1,0 +1,2 @@
+1. Any syscall that extracts static info from the kernel space like fstat, the cpu won't have to switch to kernel mode in order to run it
+2. figure 3.4 is not related to this topic
