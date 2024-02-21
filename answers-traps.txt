@@ -1,0 +1,7 @@
+1. a0, a1, a2 (a2 holds 13)
+2. both are reduced to "li	a1,12" (45b1)
+3. 1554
+4. 34
+5. HE110 world,
+if we would use big-endain, i would need to change to 0x726c6400, 57616 would not need to change    
+6. a junk value, because no second parameter was passed for the second %d to use
