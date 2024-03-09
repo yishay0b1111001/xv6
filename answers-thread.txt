@@ -1,0 +1,9 @@
+- both threads try to insert different keys (key1 , key2) that have the same hash
+- thread1 starts the for loop and loads table[i] to e
+- sometime before the thread1's call for insert finishes, the context is switched to thread 2
+- thread2 starts the for loop and loads table[i] to e
+
+- one of the threads update table[i] to the entry given by insert, thus inserting it's key
+- the other thread updates table[i] to the entty given by insert,
+  thus inserting it's own key and discarding the original thread key.
+  
